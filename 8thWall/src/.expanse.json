@@ -44,37 +44,41 @@
       },
       "id": "729478ae-d067-4e0c-a753-66c2e9efb625",
       "material": {
-        "color": "#7611b6",
+        "color": "#11b3b6",
         "type": "basic",
         "textureFiltering": "sharp"
       },
       "name": "Box",
       "position": [
         0,
-        0.5,
-        0
+        -0.08101361546152047,
+        0.3251419945581794
       ],
       "rotation": [
+        0.7879631615389451,
         0,
         0,
-        0,
-        1
+        0.6157223855420154
       ],
       "scale": [
-        1,
-        1,
-        1
+        0.4,
+        0.4000000000000002,
+        0.4000000000000002
       ],
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "parentId": "a342818a-0c94-4fb9-ae05-8d305be01b89",
       "order": 1.4038940050501252
     },
     "a608ddd9-9379-464d-966f-5d8d8674c83c": {
       "camera": {
         "type": "perspective",
         "xr": {
-          "desktop": "3D",
-          "xrCameraType": "3dOnly",
-          "headset": "disabled"
+          "desktop": "disabled",
+          "xrCameraType": "world",
+          "headset": "disabled",
+          "phone": "AR",
+          "world": {
+            "disableWorldTracking": true
+          }
         }
       },
       "components": {},
@@ -129,6 +133,34 @@
       ],
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "order": 0.6644431107322474
+    },
+    "a342818a-0c94-4fb9-ae05-8d305be01b89": {
+      "id": "a342818a-0c94-4fb9-ae05-8d305be01b89",
+      "position": [
+        1.3189766297614849,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7879631615389449,
+        0,
+        0,
+        0.6157223855420156
+      ],
+      "scale": [
+        1,
+        1.000000000000001,
+        1.000000000000001
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Objetivo de la imagen",
+      "imageTarget": {
+        "name": "Targeta"
+      },
+      "order": 2.475542489300882
     }
   },
   "spaces": {
