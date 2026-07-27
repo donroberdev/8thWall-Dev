@@ -28,46 +28,6 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "order": 0.4038940050501252
     },
-    "729478ae-d067-4e0c-a753-66c2e9efb625": {
-      "components": {
-        "8fe14f4e-4311-4b03-807d-a34c9c11368d": {
-          "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
-          "name": "example-component",
-          "parameters": {}
-        }
-      },
-      "geometry": {
-        "depth": 1,
-        "height": 1,
-        "type": "box",
-        "width": 1
-      },
-      "id": "729478ae-d067-4e0c-a753-66c2e9efb625",
-      "material": {
-        "color": "#11b3b6",
-        "type": "basic",
-        "textureFiltering": "sharp"
-      },
-      "name": "Box",
-      "position": [
-        0,
-        -0.08101361546152047,
-        0.3251419945581794
-      ],
-      "rotation": [
-        0.7879631615389451,
-        0,
-        0,
-        0.6157223855420154
-      ],
-      "scale": [
-        0.4,
-        0.4000000000000002,
-        0.4000000000000002
-      ],
-      "parentId": "a342818a-0c94-4fb9-ae05-8d305be01b89",
-      "order": 1.4038940050501252
-    },
     "a608ddd9-9379-464d-966f-5d8d8674c83c": {
       "camera": {
         "type": "perspective",
@@ -142,10 +102,10 @@
         0
       ],
       "rotation": [
-        -0.7879631615389449,
+        -0.7071067811865475,
         0,
         0,
-        0.6157223855420156
+        0.7071067811865476
       ],
       "scale": [
         1,
@@ -161,6 +121,39 @@
         "name": "Targeta"
       },
       "order": 2.475542489300882
+    },
+    "cef3a86e-7318-4afd-80ff-cbc03a1b5b0a": {
+      "id": "cef3a86e-7318-4afd-80ff-cbc03a1b5b0a",
+      "position": [
+        0.03609064380231075,
+        0.04362269049689001,
+        0.029696287604590792
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.30000000000000016,
+        0.29999999999999977,
+        0.29999999999999977
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a342818a-0c94-4fb9-ae05-8d305be01b89",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/AvatarFinal.glb"
+        },
+        "animationClip": "Idle",
+        "loop": true
+      },
+      "name": "AvatarFinal.glb",
+      "order": 1.942713261402385
     }
   },
   "spaces": {
