@@ -1,30 +1,10 @@
 import * as ecs from '@8thwall/ecs'
+import {setMaterialEffect, removeMaterialEffect} from './material-effects'
+import type {EffectMesh, MaterialEffect, Uniform} from './material-effects'
 
-type Uniform<T> = {value: T}
-type ChromaShader = {
-  uniforms: Record<string, Uniform<unknown>>
-  fragmentShader: string
-}
-
-// Only the Three.js surface used here; the engine supplies Three.js at runtime.
-type PlaneMaterial = {
-  map?: unknown
-  transparent: boolean
-  depthWrite: boolean
-  needsUpdate: boolean
-  clone: () => PlaneMaterial
-  dispose: () => void
-  onBeforeCompile: (shader: ChromaShader, renderer: unknown) => void
-  customProgramCacheKey: () => string
-}
-type PlaneMesh = {
-  isMesh?: boolean
-  material: PlaneMaterial | PlaneMaterial[]
-}
 type Binding = {
-  mesh: PlaneMesh
-  original: PlaneMaterial
-  material: PlaneMaterial
+  mesh: EffectMesh
+  effect: MaterialEffect
   uniforms: {
     chromaKeyColor: Uniform<number[]>
     chromaTolerance: Uniform<number>
@@ -74,38 +54,27 @@ const release = (instances: Map<bigint, Binding>, eid: bigint) => {
   const binding = instances.get(eid)
   if (!binding) return
 
-  if (binding.mesh.material === binding.material) {
-    binding.mesh.material = binding.original
-  }
-  // The texture belongs to ECS and is shared with the original material.
-  binding.material.dispose()
+  removeMaterialEffect(binding.mesh, 'chroma-key', binding.effect)
   instances.delete(eid)
 }
 
-const attach = (mesh: PlaneMesh, original: PlaneMaterial): Binding => {
-  // Never patch an ECS material shared by other entities.
-  const material = original.clone()
+const attach = (mesh: EffectMesh): Binding => {
   const uniforms = {
     chromaKeyColor: {value: [103 / 255, 176 / 255, 71 / 255]},
     chromaTolerance: {value: 0.08},
     chromaSoftness: {value: 0.04},
   }
-  const originalCacheKey = original.customProgramCacheKey()
-
-  material.onBeforeCompile = (shader, renderer) => {
-    original.onBeforeCompile.call(material, shader, renderer)
-    Object.assign(shader.uniforms, uniforms)
-    shader.fragmentShader = CHROMA_FUNCTIONS + shader.fragmentShader.replace(
-      '#include <map_fragment>', CHROMA_FRAGMENT
-    )
+  const effect: MaterialEffect = {
+    cacheKey: 'chroma-key-v1',
+    properties: {transparent: true, depthWrite: false},
+    compile: (shader) => {
+      Object.assign(shader.uniforms, uniforms)
+      shader.fragmentShader = CHROMA_FUNCTIONS + shader.fragmentShader.replace(
+        '#include <map_fragment>', CHROMA_FRAGMENT
+      )
+    },
   }
-  material.customProgramCacheKey = () => `${originalCacheKey}|chroma-key-v1`
-  material.transparent = true
-  material.depthWrite = false
-  material.needsUpdate = true
-  mesh.material = material
-
-  return {mesh, original, material, uniforms}
+  return {mesh, effect, uniforms}
 }
 
 ecs.registerComponent({
@@ -160,24 +129,25 @@ ecs.registerComponent({
       return
     }
 
-    const mesh = world.three.entityToObject.get(eid) as unknown as PlaneMesh | undefined
+    const mesh = world.three.entityToObject.get(eid) as unknown as EffectMesh | undefined
     let binding = instances.get(eid)
 
-    // ECS can replace a mesh or material after an Inspector/texture change.
-    if (binding && (binding.mesh !== mesh || mesh?.material !== binding.material)) {
+    if (binding && binding.mesh !== mesh) {
       release(instances, eid)
       binding = undefined
     }
 
     // Retry on subsequent frames while the entity or texture is loading.
     if (!mesh?.isMesh || !mesh.material || Array.isArray(mesh.material) || !mesh.material.map) {
+      release(instances, eid)
       return
     }
 
     if (!binding) {
-      binding = attach(mesh, mesh.material)
+      binding = attach(mesh)
       instances.set(eid, binding)
     }
+    setMaterialEffect(mesh, 'chroma-key', binding.effect)
 
     const {uniforms} = binding
     uniforms.chromaKeyColor.value[0] = schema.keyRed / 255
