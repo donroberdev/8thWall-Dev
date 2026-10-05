@@ -53,7 +53,7 @@ if (abs(magicRay.z) < 0.000001) discard;
 if (magicFrontOnly > 0.5 && magicRay.z >= 0.0) discard;
 float magicBacktrack = vMagicWindowPosition.z / magicRay.z;
 float magicRayLength = magicOrthographic > 0.5 ? vMagicViewDepth : 1.0;
-// The aperture must be between the camera and the image, not behind either one.
+// The aperture must be between the camera and the media plane, not behind either one.
 if (magicBacktrack < 0.0 || magicBacktrack >= magicRayLength) discard;
 vec2 magicHit = vMagicWindowPosition.xy - magicRay.xy * magicBacktrack;
 if (magicHit.x < magicBounds.x || magicHit.y < magicBounds.y ||
@@ -121,7 +121,7 @@ const MagicWindow = ecs.registerComponent({
   schema: {
     // @label Enabled
     enabled: ecs.boolean,
-    // Front is local +Z; place the image children at negative local Z.
+    // Front is local +Z; place image/video children at negative local Z.
     // @label Front Side Only
     frontOnly: ecs.boolean,
     // Fraction of the plane width/height reserved as a border on each edge.
@@ -172,10 +172,11 @@ const MagicWindow = ecs.registerComponent({
         if (MagicWindow.has(world, child)) continue
         const object = world.three.entityToObject.get(child) as unknown as EffectMesh | undefined
         const material = object?.material
-        const imagePlane = ecs.PlaneGeometry.has(world, child) && object?.isMesh &&
-          material && !Array.isArray(material) && material.map &&
-          !material.map.isVideoTexture && material.map.image?.tagName !== 'VIDEO'
-        if (imagePlane) {
+        // Both image textures and live video textures use the same aperture.
+        // Keep the original map so video playback and Chroma Key remain intact.
+        const mediaPlane = ecs.PlaneGeometry.has(world, child) && object?.isMesh &&
+          material && !Array.isArray(material) && material.map
+        if (mediaPlane) {
           setMaterialEffect(object, CONTENT_EFFECT, state.effect)
           currentChildren.add(object)
         }

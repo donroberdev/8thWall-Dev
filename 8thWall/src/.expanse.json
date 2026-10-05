@@ -287,359 +287,23 @@
       "name": "Icono Play",
       "order": 0.2054334147113932
     },
-    "a2cbe376-74b4-49c7-ae02-9e95eb648ef8": {
-      "id": "a2cbe376-74b4-49c7-ae02-9e95eb648ef8",
-      "position": [
-        0.0001722487893836,
-        -0.4788824722992048,
-        0.05723168457199011
-      ],
-      "rotation": [
-        0.09601947587333666,
-        0,
-        0,
-        0.9953794554103523
-      ],
-      "scale": [
-        0.29391411043263327,
-        0.6763829131087554,
-        0.9998107364625519
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "a342818a-0c94-4fb9-ae05-8d305be01b89",
-      "components": {
-        "d2103122-f3c7-4adf-bc8e-4b7800beda9d": {
-          "id": "d2103122-f3c7-4adf-bc8e-4b7800beda9d",
-          "name": "Open URL Button",
-          "parameters": {
-            "url": "https://portal.upb.edu.co/"
-          }
-        }
-      },
-      "ui": {
-        "type": "3d",
-        "width": 100,
-        "height": 36,
-        "background": "#ad50ff",
-        "borderRadius": 18,
-        "flexDirection": "row",
-        "backgroundOpacity": 1,
-        "padding": "10",
-        "gap": "6",
-        "alignItems": "center",
-        "justifyContent": "center"
-      },
-      "name": "Botón (1)",
-      "order": 2.1637143990817655
-    },
-    "c1f52b32-a2fb-4eb2-b480-43e223685221": {
-      "id": "c1f52b32-a2fb-4eb2-b480-43e223685221",
-      "position": [
-        -0.323,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "a2cbe376-74b4-49c7-ae02-9e95eb648ef8",
-      "components": {},
-      "name": "Icono (1)",
-      "ui": {
-        "width": 16,
-        "height": 16,
-        "image": {
-          "type": "url",
-          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
-        },
-        "backgroundOpacity": 1
-      },
-      "order": 0.2054334147113932
-    },
-    "29565ea4-ec7d-4ee8-9bbe-f9eb35b4876e": {
-      "id": "29565ea4-ec7d-4ee8-9bbe-f9eb35b4876e",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "a2cbe376-74b4-49c7-ae02-9e95eb648ef8",
-      "components": {},
-      "name": "Texto (1)",
-      "ui": {
-        "width": 50,
-        "height": 14,
-        "text": "Button",
-        "color": "#ffffff",
-        "fontSize": 16
-      },
-      "order": 1.4460491387884846
-    },
-    "09feecf9-87a6-4fef-8832-1f4c0fbdf774": {
-      "id": "09feecf9-87a6-4fef-8832-1f4c0fbdf774",
-      "position": [
-        -0.31713634592383944,
-        -0.4949317712305781,
-        0.05723168457199012
-      ],
-      "rotation": [
-        0.09601947587333666,
-        0,
-        0,
-        0.9953794554103523
-      ],
-      "scale": [
-        0.29391411043263327,
-        0.6763829131087554,
-        0.9998107364625519
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "a342818a-0c94-4fb9-ae05-8d305be01b89",
-      "components": {
-        "d2103122-f3c7-4adf-bc8e-4b7800beda9d": {
-          "id": "d2103122-f3c7-4adf-bc8e-4b7800beda9d",
-          "name": "Open URL Button",
-          "parameters": {
-            "url": "https://google.com"
-          }
-        }
-      },
-      "ui": {
-        "type": "3d",
-        "width": 100,
-        "height": 36,
-        "background": "#ad50ff",
-        "borderRadius": 18,
-        "flexDirection": "row",
-        "backgroundOpacity": 1,
-        "padding": "10",
-        "gap": "6",
-        "alignItems": "center",
-        "justifyContent": "center"
-      },
-      "name": "Botón (2)",
-      "order": 3.5103368312168772
-    },
-    "153ce5b2-86e1-41db-9924-a7af6520873f": {
-      "id": "153ce5b2-86e1-41db-9924-a7af6520873f",
-      "position": [
-        -0.323,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "09feecf9-87a6-4fef-8832-1f4c0fbdf774",
-      "components": {},
-      "name": "Icono (2)",
-      "ui": {
-        "width": 16,
-        "height": 16,
-        "image": {
-          "type": "url",
-          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
-        },
-        "backgroundOpacity": 1
-      },
-      "order": 0.2054334147113932
-    },
-    "652bed99-d2f1-4443-8b6a-1ebd7785df6d": {
-      "id": "652bed99-d2f1-4443-8b6a-1ebd7785df6d",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "09feecf9-87a6-4fef-8832-1f4c0fbdf774",
-      "components": {},
-      "name": "Texto (2)",
-      "ui": {
-        "width": 50,
-        "height": 14,
-        "text": "Button",
-        "color": "#ffffff",
-        "fontSize": 16
-      },
-      "order": 1.4460491387884846
-    },
-    "208129e4-d28b-442b-9834-296e3d6a1119": {
-      "id": "208129e4-d28b-442b-9834-296e3d6a1119",
-      "position": [
-        0.3398186086458619,
-        -0.47149724125045095,
-        0.05723168457199011
-      ],
-      "rotation": [
-        0.09601947587333666,
-        0,
-        0,
-        0.9953794554103523
-      ],
-      "scale": [
-        0.29391411043263327,
-        0.6763829131087554,
-        0.9998107364625519
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "a342818a-0c94-4fb9-ae05-8d305be01b89",
-      "components": {
-        "d2103122-f3c7-4adf-bc8e-4b7800beda9d": {
-          "id": "d2103122-f3c7-4adf-bc8e-4b7800beda9d",
-          "name": "Open URL Button",
-          "parameters": {
-            "url": "https://8thwall.org/"
-          }
-        }
-      },
-      "ui": {
-        "type": "3d",
-        "width": 100,
-        "height": 36,
-        "background": "#ad50ff",
-        "borderRadius": 18,
-        "flexDirection": "row",
-        "backgroundOpacity": 1,
-        "padding": "10",
-        "gap": "6",
-        "alignItems": "center",
-        "justifyContent": "center"
-      },
-      "name": "Botón (3)",
-      "order": 5.040355247950818
-    },
-    "de771be5-4381-4623-991f-ad527e79ee1f": {
-      "id": "de771be5-4381-4623-991f-ad527e79ee1f",
-      "position": [
-        -0.323,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "208129e4-d28b-442b-9834-296e3d6a1119",
-      "components": {},
-      "name": "Icono (3)",
-      "ui": {
-        "width": 16,
-        "height": 16,
-        "image": {
-          "type": "url",
-          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
-        },
-        "backgroundOpacity": 1
-      },
-      "order": 0.2054334147113932
-    },
-    "4f28d33e-57cd-49f9-a1df-63145635627a": {
-      "id": "4f28d33e-57cd-49f9-a1df-63145635627a",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "208129e4-d28b-442b-9834-296e3d6a1119",
-      "components": {},
-      "name": "Texto (3)",
-      "ui": {
-        "width": 50,
-        "height": 14,
-        "text": "Button",
-        "color": "#ffffff",
-        "fontSize": 16
-      },
-      "order": 1.4460491387884846
-    },
     "105926cd-0c57-4c88-afc3-3373e5f7dbc4": {
       "id": "105926cd-0c57-4c88-afc3-3373e5f7dbc4",
       "position": [
-        1.2730136475005147,
-        0.35392878579723086,
-        0.029737279675441652
+        0.01788941505115149,
+        0.002891960323989251,
+        -0.3069165561395591
       ],
       "rotation": [
-        -0.03236907267840637,
-        0.07928982512536244,
-        0.020212633350709282,
-        0.9961208843401282
+        0.005046300449517289,
+        -0.021767467924016605,
+        0.0003812485106851464,
+        0.9997232144340773
       ],
       "scale": [
-        1.0000000000000009,
-        1.4000000000000015,
-        1.0000000532124826
+        2.01042693247995,
+        1.8536652327236618,
+        1.4168805868558043
       ],
       "geometry": {
         "type": "plane",
@@ -659,7 +323,7 @@
         "wireframe": false,
         "forceTransparent": false
       },
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "parentId": "8fba6736-090f-498a-9019-e192b31bfac7",
       "components": {
         "67c2a5e8-5699-4bc4-b685-6c512ca7d8b1": {
           "id": "67c2a5e8-5699-4bc4-b685-6c512ca7d8b1",
@@ -675,25 +339,25 @@
         }
       },
       "name": "Faro Chroma",
-      "order": 2.034470168641481
+      "order": 3.1847978985643737
     },
     "5e0adc97-d771-4d16-a1c4-a35e08aded19": {
       "id": "5e0adc97-d771-4d16-a1c4-a35e08aded19",
       "position": [
-        1.2152737990407236,
-        0.3289789236647463,
-        -0.33343334273438974
+        0.048276009125369335,
+        0.007804184910010503,
+        -0.8282387334943562
       ],
       "rotation": [
-        -0.03236907267840637,
-        0.07928982512536244,
-        0.020212633350709282,
-        0.9961208843401282
+        0.005046300449517289,
+        -0.021767467924016605,
+        0.0003812485106851464,
+        0.9997232144340773
       ],
       "scale": [
-        1.0000000000000009,
-        1.4000000000000015,
-        1.0000000532124826
+        2.01042693247995,
+        1.8536652327236618,
+        1.4168805868558043
       ],
       "geometry": {
         "type": "plane",
@@ -713,7 +377,7 @@
         "wireframe": false,
         "forceTransparent": false
       },
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "parentId": "8fba6736-090f-498a-9019-e192b31bfac7",
       "components": {
         "67c2a5e8-5699-4bc4-b685-6c512ca7d8b1": {
           "id": "67c2a5e8-5699-4bc4-b685-6c512ca7d8b1",
@@ -729,25 +393,25 @@
         }
       },
       "name": "Cielo Chroma",
-      "order": 2.03710564087626
+      "order": 3.2450232574783167
     },
     "f6309303-b5d7-40a2-b598-c7eb0718c5fd": {
       "id": "f6309303-b5d7-40a2-b598-c7eb0718c5fd",
       "position": [
-        1.2466290446910646,
-        0.3425277825026939,
-        -0.13621592040988478
+        0.0317747686980101,
+        0.005136633596785178,
+        -0.5451381475045346
       ],
       "rotation": [
-        -0.03236907267840637,
-        0.07928982512536244,
-        0.020212633350709282,
-        0.9961208843401284
+        0.005046300449517287,
+        -0.02176746792401659,
+        0.00038124851068514683,
+        0.9997232144340773
       ],
       "scale": [
-        1.0000000000000009,
-        1.4000000000000015,
-        1.0000000532124826
+        2.01042693247995,
+        1.8536652327236618,
+        1.4168805868558043
       ],
       "geometry": {
         "type": "plane",
@@ -767,7 +431,7 @@
         "wireframe": false,
         "forceTransparent": false
       },
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "parentId": "8fba6736-090f-498a-9019-e192b31bfac7",
       "components": {
         "67c2a5e8-5699-4bc4-b685-6c512ca7d8b1": {
           "id": "67c2a5e8-5699-4bc4-b685-6c512ca7d8b1",
@@ -783,25 +447,25 @@
         }
       },
       "name": "Nubes Chroma",
-      "order": 2.039741113111038
+      "order": 3.3052486163922596
     },
     "5b91f20c-9128-42d6-9eca-ebb74c66ad12": {
       "id": "5b91f20c-9128-42d6-9eca-ebb74c66ad12",
       "position": [
-        2.089797643859651,
-        -5.551115123125783e-17,
-        -0.6944485779559182
+        2.009116065119562,
+        0.5681714349250064,
+        0.19257607837543173
       ],
       "rotation": [
-        -0.28645819883476176,
-        0,
-        0,
-        0.958092740980926
+        -0.037815966692767294,
+        0.09957842059317075,
+        0.01964128943333607,
+        0.9941168495496719
       ],
       "scale": [
-        1,
-        1.0000000532124815,
-        1.0000000532124815
+        0.9894140098383837,
+        1.027468182644581,
+        0.9963163278803024
       ],
       "geometry": {
         "type": "plane",
@@ -824,12 +488,13 @@
           "parameters": {
             "keyRed": 0,
             "keyGreen": 255,
-            "keyBlue": 0
+            "keyBlue": 0,
+            "tolerance": 0.12
           }
         }
       },
-      "name": "Plane",
-      "order": 4.425699334220146,
+      "name": "Video Gato",
+      "order": 2.03705533955136,
       "videoControls": {
         "loop": true
       }
@@ -842,15 +507,15 @@
         0.24354571055143537
       ],
       "rotation": [
-        -0.03236907267840638,
-        0.07928982512536244,
-        0.020212633350709282,
-        0.9961208843401282
+        -0.03789706063246845,
+        0.09978852826974673,
+        0.019683679209915993,
+        0.9919311918564181
       ],
       "scale": [
-        1.0000000000000009,
-        1.3999999999999992,
-        0.7142857903035488
+        0.49715152434791676,
+        0.7552547480147023,
+        0.706305974387119
       ],
       "geometry": {
         "type": "plane",
@@ -869,12 +534,168 @@
           "parameters": {
             "enabled": true,
             "frontOnly": true,
-            "borderInset": 0
+            "borderInset": 0.1
           }
         }
       },
       "name": "Ventana",
       "order": 2.067641324779476
+    },
+    "f55ae61c-3ac1-49fc-bf71-f03e45d09c08": {
+      "id": "f55ae61c-3ac1-49fc-bf71-f03e45d09c08",
+      "position": [
+        1.1286210597200848,
+        0,
+        0.9810997991232024
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "403803b5-902e-4d69-95fa-d6476d8cf6ad": {
+          "id": "403803b5-902e-4d69-95fa-d6476d8cf6ad",
+          "name": "Open URL UI Button",
+          "parameters": {}
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 107,
+        "height": 36,
+        "background": "#0b69c7",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Button",
+      "order": 5.659006165447889
+    },
+    "8f509a7a-59c9-42c0-be1c-9b3eaef93d4f": {
+      "id": "8f509a7a-59c9-42c0-be1c-9b3eaef93d4f",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f55ae61c-3ac1-49fc-bf71-f03e45d09c08",
+      "components": {},
+      "name": "Icon",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Icons/linkedin.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 0.3264344454592029
+    },
+    "4e5eae38-2272-4c4d-b1e4-882e203a6e63": {
+      "id": "4e5eae38-2272-4c4d-b1e4-882e203a6e63",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f55ae61c-3ac1-49fc-bf71-f03e45d09c08",
+      "components": {},
+      "name": "Text",
+      "ui": {
+        "width": 68,
+        "height": 14,
+        "text": "LinkedIn",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "textAlign": "center",
+        "verticalTextAlign": "start"
+      },
+      "order": 1.0344005568191654
+    },
+    "b8ed11a5-95e5-48aa-8993-8c0a7f57a3f4": {
+      "id": "b8ed11a5-95e5-48aa-8993-8c0a7f57a3f4",
+      "position": [
+        1.1761287258326023,
+        -0.5639801525085452,
+        0.17488552237890853
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "45c3c31c-2451-46aa-b1f4-dd90eb94a664": {
+          "id": "45c3c31c-2451-46aa-b1f4-dd90eb94a664",
+          "name": "Open URL 3D Object",
+          "parameters": {
+            "enabled": true,
+            "url": "https://www.google.com/",
+            "openInNewTab": true
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Icons 3D/Whatssap3D.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Whatssap3D.glb",
+      "order": 7.155429037741661
     }
   },
   "spaces": {
