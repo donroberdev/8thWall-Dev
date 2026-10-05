@@ -125,31 +125,31 @@
     "cef3a86e-7318-4afd-80ff-cbc03a1b5b0a": {
       "id": "cef3a86e-7318-4afd-80ff-cbc03a1b5b0a",
       "position": [
-        0.03609064380231097,
-        0.04362269049689012,
-        0.029696287604590765
+        1.3550672735637959,
+        0.02969628760459081,
+        0.2858887897037776
       ],
       "rotation": [
-        0.6934341753620901,
+        -0.019211368960297025,
         0,
         0,
-        0.7183118338221748
+        0.9998154446209916
       ],
       "scale": [
         0.30000000000000016,
-        0.302233355618944,
-        0.30401818842144723
+        0.301308474042042,
+        0.30308784497560787
       ],
       "geometry": null,
       "material": null,
-      "parentId": "a342818a-0c94-4fb9-ae05-8d305be01b89",
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {
         "c8d02dac-4800-4306-b735-987e38558a9e": {
           "id": "c8d02dac-4800-4306-b735-987e38558a9e",
-          "name": "Toggle Character Animation",
+          "name": "Model Animation Toggle",
           "parameters": {
             "idleClip": "Idle",
-            "danceClip": "Dance"
+            "actionClip": "Dance"
           }
         }
       },
@@ -162,7 +162,7 @@
         "loop": true
       },
       "name": "AvatarFinal.glb",
-      "order": 0.4609450916437017
+      "order": 2.4300223649172805
     },
     "0fb46537-f9a0-46fd-873b-d68544d9a0a1": {
       "id": "0fb46537-f9a0-46fd-873b-d68544d9a0a1",
@@ -247,7 +247,8 @@
         }
       },
       "name": "Boton video",
-      "order": 2.3851831967648707
+      "order": 2.3851831967648707,
+      "disabled": true
     },
     "bbd1b063-e0cd-4747-97ed-8aa6de80304d": {
       "id": "bbd1b063-e0cd-4747-97ed-8aa6de80304d",
@@ -539,7 +540,8 @@
         }
       },
       "name": "Ventana",
-      "order": 2.067641324779476
+      "order": 2.067641324779476,
+      "disabled": true
     },
     "f55ae61c-3ac1-49fc-bf71-f03e45d09c08": {
       "id": "f55ae61c-3ac1-49fc-bf71-f03e45d09c08",
@@ -583,7 +585,8 @@
         "justifyContent": "center"
       },
       "name": "Button",
-      "order": 5.659006165447889
+      "order": 5.659006165447889,
+      "disabled": true
     },
     "8f509a7a-59c9-42c0-be1c-9b3eaef93d4f": {
       "id": "8f509a7a-59c9-42c0-be1c-9b3eaef93d4f",
@@ -695,7 +698,8 @@
         "loop": true
       },
       "name": "Whatssap3D.glb",
-      "order": 7.155429037741661
+      "order": 7.155429037741661,
+      "disabled": true
     }
   },
   "spaces": {
