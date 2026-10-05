@@ -206,24 +206,24 @@
     "e1f07e00-7135-4cf8-b44d-f153785a16d9": {
       "id": "e1f07e00-7135-4cf8-b44d-f153785a16d9",
       "position": [
-        -0.3679258557335223,
-        -0.051441119578533555,
-        0.17905295239712674
+        0.9510507740279626,
+        0.17905295239712693,
+        0.05144111957853365
       ],
       "rotation": [
-        0.6598556057204242,
-        0.2130322891031152,
-        0.2213794742882451,
-        0.6857105451738941
+        -0.018282203014716055,
+        0.30717550372123686,
+        0.005902351248225273,
+        0.9514589498324537
       ],
       "scale": [
-        0.3674325060032459,
-        0.36903509232427106,
-        0.3712144213950357
+        0.367432506003246,
+        0.36903509232427145,
+        0.37121442139503597
       ],
       "geometry": null,
       "material": null,
-      "parentId": "a342818a-0c94-4fb9-ae05-8d305be01b89",
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {
         "097cfd54-a875-4d3d-a33b-ac52be4a7e31": {
           "id": "097cfd54-a875-4d3d-a33b-ac52be4a7e31",
@@ -232,32 +232,29 @@
             "videoEntity": {
               "type": "entity",
               "id": "0fb46537-f9a0-46fd-873b-d68544d9a0a1"
-            }
+            },
+            "playIcon": {
+              "type": "entity",
+              "id": "bbd1b063-e0cd-4747-97ed-8aa6de80304d"
+            },
+            "imageTarget": {
+              "type": "entity",
+              "id": "a342818a-0c94-4fb9-ae05-8d305be01b89"
+            },
+            "playOnTargetFound": true,
+            "pauseOnTargetLost": true
           }
         }
       },
-      "ui": {
-        "type": "3d",
-        "width": 100,
-        "height": 36,
-        "background": "#ad50ff",
-        "borderRadius": 18,
-        "flexDirection": "row",
-        "backgroundOpacity": 1,
-        "padding": "10",
-        "gap": "6",
-        "alignItems": "center",
-        "justifyContent": "center"
-      },
-      "name": "Botón",
-      "order": 0.10956043792466974
+      "name": "Boton video",
+      "order": 2.3851831967648707
     },
     "bbd1b063-e0cd-4747-97ed-8aa6de80304d": {
       "id": "bbd1b063-e0cd-4747-97ed-8aa6de80304d",
       "position": [
-        -0.323,
         0,
-        0
+        0,
+        0.005
       ],
       "rotation": [
         0,
@@ -266,57 +263,29 @@
         1
       ],
       "scale": [
-        1,
-        1,
+        0.22,
+        0.22,
         1
       ],
-      "geometry": null,
-      "material": null,
-      "parentId": "e1f07e00-7135-4cf8-b44d-f153785a16d9",
-      "components": {},
-      "name": "Icono",
-      "ui": {
-        "width": 16,
-        "height": 16,
-        "image": {
-          "type": "url",
-          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/Icons/play.svg"
         },
-        "backgroundOpacity": 1
+        "forceTransparent": true,
+        "depthWrite": false
       },
-      "order": 0.2054334147113932
-    },
-    "2472fe10-fea9-4d34-8961-e998b8ad82d9": {
-      "id": "2472fe10-fea9-4d34-8961-e998b8ad82d9",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "e1f07e00-7135-4cf8-b44d-f153785a16d9",
+      "parentId": "0fb46537-f9a0-46fd-873b-d68544d9a0a1",
       "components": {},
-      "name": "Texto",
-      "ui": {
-        "width": 50,
-        "height": 14,
-        "text": "Button",
-        "color": "#ffffff",
-        "fontSize": 16
-      },
-      "order": 1.4460491387884846
+      "name": "Icono Play",
+      "order": 0.2054334147113932
     },
     "a2cbe376-74b4-49c7-ae02-9e95eb648ef8": {
       "id": "a2cbe376-74b4-49c7-ae02-9e95eb648ef8",
@@ -682,7 +651,7 @@
         "color": "#FFFFFF",
         "textureSrc": {
           "type": "asset",
-          "asset": "assets/Faro_Chroma.jpg"
+          "asset": "assets/Imagenes Chroma/Faro_Chroma.jpg"
         },
         "textureFiltering": "smooth",
         "wrap": "repeat",
@@ -736,7 +705,7 @@
         "color": "#FFFFFF",
         "textureSrc": {
           "type": "asset",
-          "asset": "assets/Cielo_Chroma.jpg"
+          "asset": "assets/Imagenes Chroma/Cielo_Chroma.jpg"
         },
         "textureFiltering": "smooth",
         "wrap": "repeat",
@@ -790,7 +759,7 @@
         "color": "#FFFFFF",
         "textureSrc": {
           "type": "asset",
-          "asset": "assets/Nubes_Chroma.jpg"
+          "asset": "assets/Imagenes Chroma/Nubes_Chroma.jpg"
         },
         "textureFiltering": "smooth",
         "wrap": "repeat",
@@ -815,6 +784,55 @@
       },
       "name": "Nubes Chroma",
       "order": 2.3402478103101556
+    },
+    "5b91f20c-9128-42d6-9eca-ebb74c66ad12": {
+      "id": "5b91f20c-9128-42d6-9eca-ebb74c66ad12",
+      "position": [
+        2.089797643859651,
+        -5.551115123125783e-17,
+        -0.6944485779559182
+      ],
+      "rotation": [
+        -0.28645819883476176,
+        0,
+        0,
+        0.958092740980926
+      ],
+      "scale": [
+        1,
+        1.0000000532124815,
+        1.0000000532124815
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/Videos Chroma/Gato_Chroma.mp4"
+        }
+      },
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "f0d2e4bb-acea-4c08-aa89-8ee9aca0f8c0": {
+          "id": "f0d2e4bb-acea-4c08-aa89-8ee9aca0f8c0",
+          "name": "Chroma Key",
+          "parameters": {
+            "keyRed": 0,
+            "keyGreen": 255,
+            "keyBlue": 0
+          }
+        }
+      },
+      "name": "Plane",
+      "order": 4.425699334220146,
+      "videoControls": {
+        "loop": true
+      }
     }
   },
   "spaces": {
