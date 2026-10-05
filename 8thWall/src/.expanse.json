@@ -657,20 +657,20 @@
     "105926cd-0c57-4c88-afc3-3373e5f7dbc4": {
       "id": "105926cd-0c57-4c88-afc3-3373e5f7dbc4",
       "position": [
-        0,
-        0,
-        0
+        1.3189766297614838,
+        0.47919249717030776,
+        -0.6515636972187107
       ],
       "rotation": [
-        -0.7071068011192242,
+        -1.1102230246251565e-16,
         0,
         0,
-        0.7071067612538702
+        1
       ],
       "scale": [
-        1,
+        0.9999999999999996,
         1.4,
-        1.000000053212483
+        1.0000000532124824
       ],
       "geometry": {
         "type": "plane",
@@ -691,9 +691,130 @@
         "forceTransparent": false
       },
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "components": {},
+      "components": {
+        "67c2a5e8-5699-4bc4-b685-6c512ca7d8b1": {
+          "id": "67c2a5e8-5699-4bc4-b685-6c512ca7d8b1",
+          "name": "Chroma Key",
+          "parameters": {
+            "enabled": true,
+            "keyRed": 103,
+            "keyGreen": 176,
+            "keyBlue": 71,
+            "tolerance": 0.08,
+            "softness": 0.04
+          }
+        }
+      },
       "name": "Faro Chroma",
-      "order": 3.6413888468189644
+      "order": 2.202622595128088
+    },
+    "5e0adc97-d771-4d16-a1c4-a35e08aded19": {
+      "id": "5e0adc97-d771-4d16-a1c4-a35e08aded19",
+      "position": [
+        1.3189766297614838,
+        0.47919249717030776,
+        -1.02014107946311
+      ],
+      "rotation": [
+        -1.1102230246251565e-16,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.9999999999999996,
+        1.4,
+        1.0000000532124824
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/Cielo_Chroma.jpg"
+        },
+        "textureFiltering": "smooth",
+        "wrap": "repeat",
+        "depthWrite": false,
+        "wireframe": false,
+        "forceTransparent": false
+      },
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "67c2a5e8-5699-4bc4-b685-6c512ca7d8b1": {
+          "id": "67c2a5e8-5699-4bc4-b685-6c512ca7d8b1",
+          "name": "Chroma Key",
+          "parameters": {
+            "enabled": true,
+            "keyRed": 103,
+            "keyGreen": 176,
+            "keyBlue": 71,
+            "tolerance": 0.08,
+            "softness": 0.04
+          }
+        }
+      },
+      "name": "Cielo Chroma",
+      "order": 2.2714352027191222
+    },
+    "f6309303-b5d7-40a2-b598-c7eb0718c5fd": {
+      "id": "f6309303-b5d7-40a2-b598-c7eb0718c5fd",
+      "position": [
+        1.3189766297614838,
+        0.47919249717030776,
+        -0.819987551705226
+      ],
+      "rotation": [
+        -1.1102230246251565e-16,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.9999999999999997,
+        1.4000000000000001,
+        1.0000000532124824
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/Nubes_Chroma.jpg"
+        },
+        "textureFiltering": "smooth",
+        "wrap": "repeat",
+        "depthWrite": false,
+        "wireframe": false,
+        "forceTransparent": false
+      },
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "67c2a5e8-5699-4bc4-b685-6c512ca7d8b1": {
+          "id": "67c2a5e8-5699-4bc4-b685-6c512ca7d8b1",
+          "name": "Chroma Key",
+          "parameters": {
+            "enabled": true,
+            "keyRed": 103,
+            "keyGreen": 176,
+            "keyBlue": 71,
+            "tolerance": 0.08,
+            "softness": 0.04
+          }
+        }
+      },
+      "name": "Nubes Chroma",
+      "order": 2.3402478103101556
     }
   },
   "spaces": {
