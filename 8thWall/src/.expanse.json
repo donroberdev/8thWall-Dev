@@ -653,6 +653,47 @@
         "fontSize": 16
       },
       "order": 1.4460491387884846
+    },
+    "105926cd-0c57-4c88-afc3-3373e5f7dbc4": {
+      "id": "105926cd-0c57-4c88-afc3-3373e5f7dbc4",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7071068011192242,
+        0,
+        0,
+        0.7071067612538702
+      ],
+      "scale": [
+        1,
+        1.4,
+        1.000000053212483
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/Faro_Chroma.jpg"
+        },
+        "textureFiltering": "smooth",
+        "wrap": "repeat",
+        "depthWrite": false,
+        "wireframe": false,
+        "forceTransparent": false
+      },
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Faro Chroma",
+      "order": 3.6413888468189644
     }
   },
   "spaces": {
